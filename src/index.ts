@@ -1,7 +1,9 @@
 import { Company } from "./Company";
+import { CustomMap } from "./CustomMap";
 import { User } from "./User";
 
 const user = new User();
 const company = new Company();
-console.log("company", company);
-console.log(user);
+const map = new CustomMap("map");
+map.addMarker(user);
+map.addMarker(company);
